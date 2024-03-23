@@ -36,9 +36,9 @@ qmk setup zsa/qmk_firmware -b firmware23
 
 1. To create or edit a layout, use [ZSA Oryx](https://configure.zsa.io/), a user-friendly keyboard configuration tool developed by ZSA.
 2. If a layout is compiled, you should see a 'Download Source' link. If not, press 'Compile this layout,' and it should become available.
-3. After downloading the archive, extract it. Inside, you'll find a folder named `yourlayoutname_source`. Keep the files within this folder and remove the rest.
+3. After downloading the archive, extract it. Inside, you'll find a folder named `yourlayoutname_source`. Keep the files within this folder and remove the rest. Move this folder to this repository in `keyboards/voyager/keymaps`. Make sure to keep all the patched changes.
 4. Ensure that your environment is set up correctly by following the [QMK documentation on setting up your environment](https://docs.qmk.fm/#/newbs_getting_started?id=set-up-your-environment).
-5. In a QMK firmware directory, run `make keyboard:yourlayoutname`. For example, to build firmware corresponding to the 'Lit Voyager' layout, run `make voyager:lit`.
+5. In a QMK firmware directory, run `make keyboard:yourlayoutname`. For example, to build firmware corresponding to the 'Lit Voyager' layout, run `make voyager:voyager_mogo1_source`.
 6. Use any flashing tool to install the firmware on your keyboard.
 
 ## Maintainers
